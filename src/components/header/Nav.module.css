@@ -1,0 +1,47 @@
+.header {
+  padding: 4.4rem 2.4rem 4.5rem 2.4rem;
+  position: relative;
+}
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 128rem;
+  margin: 0 auto;
+}
+
+.nav {
+}
+.navlinks {
+  display: flex;
+  align-items: center;
+  gap: 3.3rem;
+}
+.link {
+  text-transform: uppercase;
+  color: #83888f;
+  font-family: "Barlow";
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.923077px;
+}
+.mobileBtn {
+  display: none;
+}
+@media all and (max-width: 651px) {
+  .navlinks {
+    display: none;
+  }
+  .mobileBtn {
+    display: flex;
+  }
+  .openNav {
+    display: block;
+    position: absolute;
+    width: 100%;
+    border: 1px solid black;
+    top: 0;
+    left: 0;
+  }
+}
