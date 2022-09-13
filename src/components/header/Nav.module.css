@@ -8,6 +8,8 @@
   align-items: center;
   max-width: 128rem;
   margin: 0 auto;
+  position: relative;
+  flex-wrap: wrap;
 }
 
 .nav {

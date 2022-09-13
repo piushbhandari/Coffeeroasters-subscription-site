@@ -1,0 +1,110 @@
+.procedure {
+  padding: 0 2.4rem;
+  margin-bottom: 20rem;
+}
+.container {
+  max-width: 104.5rem;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+.title {
+  font-family: "Fraunces 9pt";
+  font-weight: 900;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  color: #83888f;
+  margin-bottom: 8rem;
+}
+.steps {
+  margin-bottom: 6.4rem;
+  border: 1px solid blue;
+  display: flex;
+  gap: 9.5rem;
+}
+.step {
+  border: 1px solid red;
+}
+.stepNumber {
+  font-family: "Fraunces 9pt";
+  font-weight: 900;
+  font-size: 7.2rem;
+  line-height: 7.2rem;
+  color: #fdd6ba;
+  margin-bottom: 3.8rem;
+}
+.stepTitle {
+  margin-bottom: 4.2rem;
+  font-family: "Fraunces 9pt";
+  font-weight: 900;
+  font-size: 3.2rem;
+  line-height: 3.6rem;
+  color: #333d4b;
+}
+.desc {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #333d4b;
+}
+.cta {
+  display: inline-block;
+  padding: 1.5rem 3.1rem 1.6rem 3.1rem;
+  background: #0e8784;
+  border-radius: 6px;
+  font-family: "Fraunces 9pt";
+  font-weight: 900;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  color: #fefcf7;
+}
+.stepbox {
+  margin-bottom: 6.7rem;
+  display: flex;
+  align-items: center;
+}
+.circle {
+  border-radius: 50%;
+  width: 3.1rem;
+  height: 3.1rem;
+  background: #fefcf7;
+  border: 2px solid #0e8784;
+}
+.line {
+  border: 2px solid #fdd6ba;
+  width: 100%;
+  max-width: 38rem;
+}
+@media all and (max-width: 901px) {
+  .title {
+    margin-bottom: 4rem;
+  }
+  .line {
+    max-width: 23.35rem;
+  }
+  .steps {
+    gap: 1rem;
+    margin-bottom: 4.4rem;
+  }
+}
+
+@media all and (max-width: 631px) {
+  .procedure {
+    padding: 0 2.4rem;
+    margin-bottom: 12rem;
+  }
+  .container {
+    text-align: center;
+  }
+  .stepbox {
+    display: none;
+  }
+  .steps {
+    flex-direction: column;
+    gap: 5.6rem;
+  }
+  .steps {
+    gap: 7.9rem;
+  }
+}
