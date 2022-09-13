@@ -1,0 +1,69 @@
+.collection {
+  margin-bottom: 20rem;
+  padding: 0 2.4rem;
+}
+.container {
+  margin: 0 auto;
+  max-width: 111.1rem;
+}
+.title {
+  color: linear-gradient(180deg, rgba(254, 252, 247, 0.0001) 0%, #fefcf7 100%);
+  font-family: "Fraunces 9pt";
+  font-weight: 900;
+  font-size: 15rem;
+  line-height: 7.2rem;
+  text-align: center;
+  display: none;
+}
+.items {
+  display: flex;
+  gap: 3rem;
+  text-align: center;
+}
+.imgBox {
+  width: 100%;
+  max-width: 25.5rem;
+  margin-bottom: 7.155rem;
+}
+
+.subtitle {
+  font-family: "Fraunces 9pt";
+  font-weight: 900;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  color: #333d4b;
+  margin-bottom: 2.4rem;
+}
+.desc {
+  font-family: "Barlow";
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #333d4b;
+}
+
+@media all and (max-width: 768px) {
+  .imgBox {
+    margin-bottom: initial;
+  }
+
+  .items {
+    flex-direction: column;
+    text-align: initial;
+  }
+  .item {
+    display: flex;
+    gap: 3.5rem;
+  }
+}
+
+@media all and (max-width: 445px) {
+  .items {
+    text-align: center;
+  }
+  .item {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.4rem;
+  }
+}

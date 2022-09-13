@@ -23,7 +23,7 @@ const Nav = () => {
               </Link>
             </li>
             <li className={styles.navlink}>
-              <Link className={styles.link} to="/">
+              <Link className={styles.link} to="/about">
                 about us
               </Link>
             </li>
