@@ -1,16 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./Nav.module.css";
 import Logo from "./../../assets/shared/desktop/logo.svg";
 import ham from "./../../assets/shared/mobile/icon-hamburger.svg";
 import exit from "./../../assets/shared/mobile/icon-close.svg";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
-
+  const { pathname } = useLocation();
   function handleMobileBtn(e) {
     e.preventDefault();
     setIsOpen(!isOpen);
   }
+
+  useEffect(() => {
+    setIsOpen(false);
+  }, [pathname]);
   return (
     <header className={styles.header}>
       <div className={styles.navContainer}>
